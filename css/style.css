@@ -10,56 +10,56 @@
    CSS CUSTOM PROPERTIES
    ============================================ */
 :root {
-  /* Primary Colors */
-  --primary-dark: #1a1a2e;
-  --primary: #16213e;
-  --primary-light: #0f3460;
+  /* Primary Colors - Deep Luxury Navy */
+  --primary-dark: #0a0e1a;
+  --primary: #0d1224;
+  --primary-light: #141b33;
   
-  /* Accent Colors */
-  --accent: #2563eb;
-  --accent-hover: #3b82f6;
-  --accent-glow: rgba(37, 99, 235, 0.2);
-  --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
+  /* Accent Colors - Premium Gold/Amber */
+  --accent: #f0a830;
+  --accent-hover: #f4bc5c;
+  --accent-glow: rgba(240, 168, 48, 0.25);
+  --accent-gradient: linear-gradient(135deg, #f0a830, #e8d574);
   
-  /* Secondary Colors */
-  --secondary: #6c5ce7;
-  --secondary-light: #6c5ce7;
-  --secondary-glow: rgba(108, 92, 231, 0.15);
+  /* Secondary Colors - Electric Blue */
+  --secondary: #4f8fff;
+  --secondary-light: #6ba3ff;
+  --secondary-glow: rgba(79, 143, 255, 0.15);
   
-  /* Neutral Colors */
-  --dark-bg: #ffffff;
-  --card-bg: #ffffff;
-  --card-border: rgba(0, 0, 0, 0.08);
-  --card-hover: #f8f9fa;
+  /* Neutral Colors - Dark Glass */
+  --dark-bg: #0a0e1a;
+  --card-bg: rgba(20, 27, 51, 0.6);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --card-hover: rgba(30, 40, 70, 0.8);
   
   /* Text Colors */
-  --text-primary: #1a1a2e;
-  --text-secondary: #555770;
-  --text-muted: #8e90a6;
+  --text-primary: #eef0f6;
+  --text-secondary: #a0a8c0;
+  --text-muted: #6b7394;
   
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #f8f9ff 0%, #eef0ff 40%, #f5f0ff 70%, #f8f9ff 100%);
-  --gradient-section: linear-gradient(180deg, #f5f7fa 0%, #eef1f6 50%, #f5f7fa 100%);
-  --gradient-card: linear-gradient(145deg, #ffffff, #fafbfc);
-  --gradient-text: linear-gradient(135deg, #2563eb, #1d4ed8);
-  --gradient-purple: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  --gradient-hero: linear-gradient(135deg, #0a0e1a 0%, #0d1224 40%, #111830 70%, #0a0e1a 100%);
+  --gradient-section: linear-gradient(180deg, #0d1224 0%, #101729 50%, #0d1224 100%);
+  --gradient-card: linear-gradient(145deg, rgba(20,27,51,0.7), rgba(15,20,40,0.5));
+  --gradient-text: linear-gradient(135deg, #f0a830, #e8d574);
+  --gradient-purple: linear-gradient(135deg, #4f8fff, #6ba3ff);
   
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 8px 30px rgba(37, 99, 235, 0.12);
-  --shadow-purple: 0 8px 30px rgba(108, 92, 231, 0.1);
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 8px 30px rgba(240, 168, 48, 0.15);
+  --shadow-purple: 0 8px 30px rgba(79, 143, 255, 0.12);
   
   /* Spacing */
   --section-padding: 100px 0;
   --container-padding: 0 20px;
   
   /* Border Radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 30px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
   
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,8 +133,8 @@ p {
 .section-badge {
   display: inline-block;
   padding: 6px 20px;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  background: rgba(240, 168, 48, 0.08);
+  border: 1px solid rgba(240, 168, 48, 0.2);
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -194,7 +194,7 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 30px rgba(240, 168, 48, 0.4);
 }
 
 .btn-primary::after {
@@ -215,7 +215,7 @@ p {
 .btn-outline {
   background: transparent;
   color: var(--text-primary);
-  border: 2px solid rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn-outline:hover {
@@ -248,12 +248,12 @@ p {
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(10, 14, 26, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   padding: 10px 0;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
 
 .navbar .container {
@@ -409,8 +409,8 @@ p {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.15);
+  background: rgba(240, 168, 48, 0.08);
+  border: 1px solid rgba(240, 168, 48, 0.15);
   border-radius: 50px;
   font-size: 0.85rem;
   color: var(--accent);
@@ -487,9 +487,9 @@ p {
 
 .hero-float-card {
   position: absolute;
-  background: #ffffff;
+  background: rgba(20, 27, 51, 0.85);
   backdrop-filter: blur(20px);
-  border: 1px solid var(--card-border);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-md);
   padding: 16px 20px;
   display: flex;
@@ -583,8 +583,9 @@ p {
 }
 
 .service-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 36px 28px;
   text-align: center;
@@ -608,7 +609,7 @@ p {
 
 .service-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(240, 168, 48, 0.2);
   box-shadow: var(--shadow-glow);
 }
 
@@ -644,7 +645,7 @@ p {
 .service-card .price-tag {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(240, 168, 48, 0.1);
   border-radius: 50px;
   font-size: 0.85rem;
   color: var(--accent);
@@ -666,8 +667,9 @@ p {
 }
 
 .why-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 40px 30px;
   text-align: center;
@@ -679,7 +681,7 @@ p {
 .why-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-purple);
-  border-color: rgba(108, 92, 231, 0.2);
+  border-color: rgba(79, 143, 255, 0.2);
 }
 
 .why-card .icon-circle {
@@ -745,8 +747,9 @@ p {
 }
 
 .portfolio-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition);
@@ -780,7 +783,7 @@ p {
 .portfolio-card .card-image .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(255,255,255,0.1) 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.3) 100%);
 }
 
 .portfolio-card .card-body {
@@ -790,7 +793,7 @@ p {
 .portfolio-card .card-body .tag {
   display: inline-block;
   padding: 4px 12px;
-  background: rgba(108, 92, 231, 0.1);
+  background: rgba(79, 143, 255, 0.12);
   border-radius: 50px;
   font-size: 0.75rem;
   color: var(--secondary-light);
@@ -837,8 +840,9 @@ p {
 }
 
 .testimonial-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 32px;
   transition: var(--transition);
@@ -903,8 +907,8 @@ p {
 }
 
 .cta-box {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  border: none;
+  background: linear-gradient(135deg, #111830, #0d1224);
+  border: 1px solid rgba(240, 168, 48, 0.1);
   border-radius: var(--radius-xl);
   padding: 60px;
   text-align: center;
@@ -919,8 +923,8 @@ p {
 }
 
 .cta-box .section-badge {
-  background: rgba(37, 99, 235, 0.15);
-  border-color: rgba(37, 99, 235, 0.3);
+  background: rgba(240, 168, 48, 0.12);
+  border-color: rgba(240, 168, 48, 0.25);
 }
 
 .cta-box::before {
@@ -930,7 +934,7 @@ p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(ellipse, rgba(37,99,235,0.1), transparent 50%);
+  background: radial-gradient(ellipse, rgba(240,168,48,0.06), transparent 50%);
   animation: rotate 20s linear infinite;
 }
 
@@ -957,8 +961,8 @@ p {
    ============================================ */
 .footer {
   padding: 60px 0 30px;
-  background: #1a1a2e;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  background: #060911;
+  border-top: 1px solid rgba(255,255,255,0.04);
   color: rgba(255,255,255,0.9);
 }
 
@@ -967,11 +971,11 @@ p {
 }
 
 .footer-brand p {
-  color: rgba(255,255,255,0.6) !important;
+  color: rgba(255,255,255,0.5) !important;
 }
 
 .footer-links li a {
-  color: rgba(255,255,255,0.5) !important;
+  color: rgba(255,255,255,0.4) !important;
 }
 
 .footer-links li a:hover {
@@ -979,12 +983,12 @@ p {
 }
 
 .footer-contact li {
-  color: rgba(255,255,255,0.5) !important;
+  color: rgba(255,255,255,0.4) !important;
 }
 
 .footer-bottom {
-  color: rgba(255,255,255,0.4) !important;
-  border-top-color: rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.3) !important;
+  border-top-color: rgba(255,255,255,0.06) !important;
 }
 
 .footer .logo-text {
@@ -1087,7 +1091,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #f0f2ff 0%, #e8ecff 40%, #f3eeff 70%, #f0f2ff 100%);
+  background: linear-gradient(135deg, #0d1224 0%, #111830 40%, #0d1224 70%, #0a0e1a 100%);
 }
 
 .page-header .container {
@@ -1210,8 +1214,9 @@ p {
 }
 
 .pricing-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 40px 30px;
   text-align: center;
@@ -1221,7 +1226,7 @@ p {
 }
 
 .pricing-card.featured {
-  border-color: rgba(37, 99, 235, 0.3);
+  border-color: rgba(240, 168, 48, 0.3);
   transform: scale(1.05);
 }
 
@@ -1283,7 +1288,7 @@ p {
   padding: 8px 0;
   font-size: 0.9rem;
   color: var(--text-secondary);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .pricing-card .features li .check {
@@ -1291,7 +1296,7 @@ p {
 }
 
 .pricing-card .features li .cross {
-  color: rgba(0,0,0,0.25);
+  color: rgba(255,255,255,0.2);
 }
 
 /* ============================================
@@ -1331,8 +1336,8 @@ p {
 .blog-card {
   display: grid;
   grid-template-columns: 280px 1fr;
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition);
@@ -1408,8 +1413,8 @@ p {
 }
 
 .sidebar-widget {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 28px;
   box-shadow: var(--shadow-sm);
@@ -1490,8 +1495,8 @@ p {
 }
 
 .team-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   overflow: hidden;
   text-align: center;
@@ -1552,8 +1557,8 @@ p {
 }
 
 .value-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 32px 24px;
   text-align: center;
@@ -1563,7 +1568,7 @@ p {
 
 .value-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(240, 168, 48, 0.15);
   box-shadow: var(--shadow-glow);
 }
 
@@ -1601,8 +1606,8 @@ p {
 }
 
 .contact-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 28px;
   display: flex;
@@ -1614,7 +1619,7 @@ p {
 
 .contact-card:hover {
   transform: translateX(5px);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(240, 168, 48, 0.15);
   box-shadow: var(--shadow-glow);
 }
 
@@ -1622,7 +1627,7 @@ p {
   width: 56px;
   height: 56px;
   border-radius: var(--radius-md);
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(240, 168, 48, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1644,8 +1649,8 @@ p {
 }
 
 .contact-form-wrapper {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
+  background: rgba(20, 27, 51, 0.6);
+  border: 1px solid rgba(255,255,255,0.06);
   border-radius: var(--radius-lg);
   padding: 40px;
   box-shadow: var(--shadow-sm);
@@ -1671,8 +1676,8 @@ p {
 .form-group textarea {
   width: 100%;
   padding: 14px 18px;
-  background: #f8f9fa;
-  border: 1px solid var(--card-border);
+  background: rgba(10, 14, 26, 0.6);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-family: 'Prompt', sans-serif;
@@ -1685,7 +1690,7 @@ p {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-glow);
+  box-shadow: 0 0 0 3px rgba(240, 168, 48, 0.15);
 }
 
 .form-group textarea {
@@ -1720,14 +1725,14 @@ p {
    ============================================ */
 .counter-section {
   padding: 60px 0;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  border-top: none;
-  border-bottom: none;
+  background: linear-gradient(135deg, #111830, #0d1224);
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
   color: white;
 }
 
 .counter-item p {
-  color: rgba(255,255,255,0.7) !important;
+  color: rgba(255,255,255,0.6) !important;
 }
 
 .counter-grid {
@@ -1823,13 +1828,14 @@ p {
   height: 48px;
   border-radius: 50%;
   background: var(--accent-gradient);
-  color: white;
+  color: #0a0e1a;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  font-weight: 700;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
@@ -1844,6 +1850,58 @@ p {
 
 .back-to-top:hover {
   transform: translateY(-3px);
+}
+
+/* ============================================
+   LINE FLOATING BUTTON
+   ============================================ */
+.line-float-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #06c755;
+  color: white;
+  border-radius: var(--radius-xl);
+  font-family: 'Prompt', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(6, 199, 85, 0.35);
+  transition: var(--transition);
+  animation: lineFloat 3s ease-in-out infinite;
+}
+
+.line-float-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 32px rgba(6, 199, 85, 0.5);
+}
+
+.line-float-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.line-float-btn .line-pulse {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  background: #ff3b30;
+  border-radius: 50%;
+  border: 2px solid #06c755;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes lineFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
 /* ============================================
@@ -1931,7 +1989,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(10, 14, 26, 0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
