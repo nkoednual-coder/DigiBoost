@@ -16,10 +16,10 @@
   --primary-light: #0f3460;
   
   /* Accent Colors */
-  --accent: #ff6b35;
-  --accent-hover: #ff8c5a;
-  --accent-glow: rgba(255, 107, 53, 0.2);
-  --accent-gradient: linear-gradient(135deg, #ff6b35, #ff9a5c);
+  --accent: #2563eb;
+  --accent-hover: #3b82f6;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
   
   /* Secondary Colors */
   --secondary: #6c5ce7;
@@ -41,14 +41,14 @@
   --gradient-hero: linear-gradient(135deg, #f8f9ff 0%, #eef0ff 40%, #f5f0ff 70%, #f8f9ff 100%);
   --gradient-section: linear-gradient(180deg, #f5f7fa 0%, #eef1f6 50%, #f5f7fa 100%);
   --gradient-card: linear-gradient(145deg, #ffffff, #fafbfc);
-  --gradient-text: linear-gradient(135deg, #ff6b35, #e8530c);
+  --gradient-text: linear-gradient(135deg, #2563eb, #1d4ed8);
   --gradient-purple: linear-gradient(135deg, #6c5ce7, #a29bfe);
   
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 8px 30px rgba(255, 107, 53, 0.12);
+  --shadow-glow: 0 8px 30px rgba(37, 99, 235, 0.12);
   --shadow-purple: 0 8px 30px rgba(108, 92, 231, 0.1);
   
   /* Spacing */
@@ -133,8 +133,8 @@ p {
 .section-badge {
   display: inline-block;
   padding: 6px 20px;
-  background: rgba(255, 107, 53, 0.08);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.2);
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -194,7 +194,7 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
 
 .btn-primary::after {
@@ -409,8 +409,8 @@ p {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: rgba(255, 107, 53, 0.08);
-  border: 1px solid rgba(255, 107, 53, 0.15);
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   border-radius: 50px;
   font-size: 0.85rem;
   color: var(--accent);
@@ -608,7 +608,7 @@ p {
 
 .service-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 107, 53, 0.15);
+  border-color: rgba(37, 99, 235, 0.15);
   box-shadow: var(--shadow-glow);
 }
 
@@ -644,7 +644,7 @@ p {
 .service-card .price-tag {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(255, 107, 53, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border-radius: 50px;
   font-size: 0.85rem;
   color: var(--accent);
@@ -919,8 +919,8 @@ p {
 }
 
 .cta-box .section-badge {
-  background: rgba(255, 107, 53, 0.15);
-  border-color: rgba(255, 107, 53, 0.3);
+  background: rgba(37, 99, 235, 0.15);
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .cta-box::before {
@@ -930,7 +930,7 @@ p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(ellipse, rgba(255,107,53,0.1), transparent 50%);
+  background: radial-gradient(ellipse, rgba(37,99,235,0.1), transparent 50%);
   animation: rotate 20s linear infinite;
 }
 
@@ -1221,7 +1221,7 @@ p {
 }
 
 .pricing-card.featured {
-  border-color: rgba(255, 107, 53, 0.3);
+  border-color: rgba(37, 99, 235, 0.3);
   transform: scale(1.05);
 }
 
@@ -1563,7 +1563,7 @@ p {
 
 .value-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 107, 53, 0.15);
+  border-color: rgba(37, 99, 235, 0.15);
   box-shadow: var(--shadow-glow);
 }
 
@@ -1614,7 +1614,7 @@ p {
 
 .contact-card:hover {
   transform: translateX(5px);
-  border-color: rgba(255, 107, 53, 0.15);
+  border-color: rgba(37, 99, 235, 0.15);
   box-shadow: var(--shadow-glow);
 }
 
@@ -1622,7 +1622,7 @@ p {
   width: 56px;
   height: 56px;
   border-radius: var(--radius-md);
-  background: rgba(255, 107, 53, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
